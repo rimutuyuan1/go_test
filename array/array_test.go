@@ -8,7 +8,7 @@ func TestArray(t *testing.T) {
 
 	numbers := [5]int{1, 2, 3, 4, 5}
 
-	got := Array(numbers)
+	got := Array2(numbers)
 	want := 15
 
 	if want != got {
