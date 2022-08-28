@@ -1,8 +1,16 @@
 package perimeter
 
+type Shape interface {
+	Area() float64
+}
+
 type Rectangle struct {
 	Width  float64
 	Height float64
+}
+
+type Circle struct {
+	Radius float64
 }
 
 //不同的包可以有函数名相同的函数，可以为多个类型定义各自的方法
@@ -14,10 +22,6 @@ func (r Rectangle) Area() float64 {
 
 func (c Circle) Area() float64 {
 	return 0
-}
-
-type Circle struct {
-	Radius float64
 }
 
 func Perimeter(rectangle Rectangle) float64 {
