@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestHello(t *testing.T) {
+func TestMian(t *testing.T) {
 	assertCorrectMessage := func(t *testing.T, got, want string) {
 		t.Helper()
 		if got != want {
